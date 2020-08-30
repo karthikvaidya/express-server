@@ -56,7 +56,7 @@ exports.validateAccessToken = async (request, response, next) => {
 				return responseHandler.error(response, 'Access token expired', 405);
 			}
 
-			const userObj = await getUserInfoForThisSession(sessionObj.userRoleId);
+			const userObj = await getUserInfoForThisSession(sessionObj.userId);
 			if (isEmpty(userObj)) {
 				return responseHandler.error(
 					response,

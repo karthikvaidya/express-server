@@ -45,10 +45,26 @@ const getCurrentDateTime = () => {
 	return date.toLocaleTimeString('en-us', options);
 };
 
+const isValidDataType = (data, type) => {
+	switch (type) {
+		case 'string':
+			return typeof data === 'string';
+		case 'object':
+			return typeof data === 'object';
+		case 'boolean':
+			return typeof data === 'boolean';
+		case 'array':
+			return typeof data === 'object' && data instanceof Array;
+		default:
+			return false;
+	}
+};
+
 module.exports = {
 	generateId,
 	joinStrings,
 	isValidEmail,
+	isValidDataType,
 	hasSplCharacters,
 	isStrongPassword,
 	createAccessToken,
