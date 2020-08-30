@@ -65,6 +65,4 @@ typings/
 # rest client
 *restclient.rest
 
-# testing scripts
-test/*
 ###
