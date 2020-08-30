@@ -1,0 +1,36 @@
+{
+	"name": "express",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "nodemon ./bin/www"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"dependencies": {
+		"compression": "^1.7.4",
+		"cookie-parser": "^1.4.5",
+		"cors": "^2.8.5",
+		"crypto": "^1.0.1",
+		"debug": "~2.6.9",
+		"dotenv": "^8.2.0",
+		"express": "~4.16.1",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.20",
+		"morgan": "~1.9.1",
+		"nanoid": "^2.1.11",
+		"pg": "^7.18.2",
+		"winston": "^3.3.3"
+	},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-node": "^4.1.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-node": "^10.0.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"prettier": "^1.19.1"
+	}
+}
