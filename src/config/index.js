@@ -12,8 +12,13 @@ const JWT = {
 	},
 };
 
+/**
+ * In production environment, db configuration should not be part od code base.
+ * We can pull it from cloud storage. Eg: AWS parameter store
+ * Or we can store in environment file & this should be git ignored
+ */
 const postgreDBConfig = {
-	user: 'awsuser',
+	user: 'testuser',
 	host: 'localhost',
 	database: 'postgres',
 	password: 'test1234',
